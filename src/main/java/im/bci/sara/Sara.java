@@ -56,7 +56,7 @@ public class Sara {
 
     private boolean isBotCall(Post post) {
         String message = post.getMessage();
-        return message.contains("/" + NAME) || message.contains(NAME + "<");
+        return message.contains("/" + NAME) || message.contains(NAME + "<") || message.contains(NAME + "&lt;");
     }
 
 }
